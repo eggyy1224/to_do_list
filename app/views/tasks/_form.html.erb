@@ -1,0 +1,18 @@
+
+<%= simple_form_for(task) do |f| %>
+  <%= f.input :name, label: "Task" %>
+  
+
+  <%= f.input :due_date, label: "Due Date" %>
+  
+
+  <%= f.input :note, label: "Note" %>
+  
+
+  
+
+  <%= f.submit %>
+<% end %>
+
+<br />
+<%= link_to 'Back', tasks_path %>
